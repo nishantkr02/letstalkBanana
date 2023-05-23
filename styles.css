@@ -5,7 +5,7 @@
 /* Using variable in CSS -----*/
 /*Defining */
 :root{
---primary-color:rgb(250, 232, 101);
+--primary-color:rgb(203, 190, 98);
 --dark-grey:#0eda8f ;
 --off-white:#F3F4F6;
 }
@@ -17,21 +17,17 @@ color:var(--primary-color);
 
 body{
     font-family: 'Montserrat', sans-serif;
-    background-color: wheat
+    background-color: rgb(233, 226, 140)
    ;
-}
-hr{
-    margin:3rem 0;
+   background-image:url("https://w0.peakpx.com/wallpaper/108/669/HD-wallpaper-minions-anime-cartoon-samsung.jpg") ;
+   margin: auto;
+   max-width: 90%;
 }
 
 /*Container ----------------*/
 .container{
-    /*
-    old method 
-    padding-left 1rem;
-    padding-right: 5rem;
-    new => first is for top bottom ,second is for left right*/
-    padding: 0rem 1rem;
+    
+    padding: 0rem 0.5rem;
 }
 .container-center{
     max-width:80%;
@@ -39,26 +35,8 @@ hr{
     border: 2px #6B7280 ;
 }
 
-/*LINKS ----------------*/
-.link{
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-.primary-link{
-    background-color:var(--primary-color);
-    border-radius: 0.5rem;
-    color: white;
 
-}
-.secondary-link{
-    color:var(--primary-color) ;
-    border-radius: 0.5rem;
-    border: 1px solid var(--primary-color);
-}
 
-/
 /*Header--------------*/
 .hero{
     padding: 2rem;
@@ -71,21 +49,23 @@ hr{
 }
 .hero .hero-heading{
     
-    font-size:large;
+    font-size:x-large;
     text-align: center;
     color: var(--dark-grey);
     padding: 2rem;
 }
 .hero .heading-inverted{
- 
-    color: var(--primary-color);
+ font-size: xx-large;
+    color:yellow;
 }
 
 /*Sections---------  */
 .section{
-    padding: 1rem;
-    margin: 1rem;
-    
+    max-width: 80%;
+    padding: 2rem;
+    margin: auto;
+    margin-bottom: 1rem;
+    background-color: var(--primary-color);
 
 }
 .section h1{
@@ -99,10 +79,11 @@ hr{
 }
 /*Footer---------------*/
 .footer{
-    max-width: 600px;
+    max-width: 80%;
+    height: 15vh;
     background-color: var(--primary-color);
     padding: 2rem 1rem;
-    border-radius: 2rem;
+  
     text-align: center;
     color: white;
     margin: auto;
@@ -131,12 +112,13 @@ textarea{
     padding: 2rem;
 }
 #output{
-    width: 80%;
+    width: 70%;
     text-align: center;
+    background-color:white ;
             height: 10vh;
-            display: block;
-            margin: 3rem;
-            padding: 1rem;
+      
+            margin: auto;
+            padding: 3rem;
             border: 1px solid ;
 }
 /*---------------*/
@@ -144,22 +126,24 @@ textarea{
    
   text-align: center;
     text-decoration: none;
-    padding: 0.5rem 1rem;
-    display: inline-block;
+    padding: 1.5rem 3rem;
+    
+    margin: 1rem;
 
 }
 .primary-btn{
 
+    font-size: large;
     background-color:var(--primary-color);
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     border: 1px solid var(--dark-grey);
     color: white;
 
 }
 .secondary-btn{
- 
+    
     color:var(--dark-grey) ;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     border: 2px solid var(--primary-color);
 }
 .outputBox{
@@ -167,3 +151,19 @@ textarea{
     max-width: 80%;
     margin: auto;
 }
+.containerBtn {
+    height: 200px;
+    max-width: 80%;
+    margin: auto;
+    position: relative;
+    border: 1px ;
+  }
+  
+  .center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
