@@ -149,8 +149,8 @@ textarea{
     margin: auto;
 }
 .containerBtn {
-    height: 100px;
-    max-width: 80%;
+    height: 200px;
+    max-width: 100%;
     margin: auto;
     position: relative;
     border: 1px ;
